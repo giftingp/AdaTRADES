@@ -1,2 +1,8 @@
-This code implements AdaTRADES, an adaptive adversarial training framework that enhances model robustness against adversarial attacks on the MNIST dataset. It improves upon the original TRADES method by dynamically adjusting the robustness-accuracy trade-off parameter (β) throughout training using multiple scheduling strategies (linear, cosine, sawtooth), computing per-sample difficulty scores (margin, entropy, confidence, or loss-based) to weight the robustness loss, and generating adversarial examples with uncertainty-guided PGD that focuses on more uncertain samples. The framework compares five training approaches (standard, FGSM, PGD, TRADES, AdaTRADES), evaluates them against multiple attack types, and provides comprehensive visualizations of training dynamics and final performance metrics.
+# AdaTRADES 
+This code implements AdaTRADES, an adaptive adversarial training framework that enhances model robustness against adversarial attacks on the MNIST dataset. It improves upon the original TRADES method by dynamically adjusting the robustness-accuracy trade-off parameter (β) throughout training using multiple scheduling strategies (linear, cosine, sawtooth), computing per-sample difficulty scores (margin, entropy, confidence, or loss-based) to weight the robustness loss, and generating adversarial examples with uncertainty-guided PGD that focuses on more uncertain samples [1]. The framework compares five training approaches (standard, FGSM, PGD, TRADES, AdaTRADES), evaluates them against multiple attack types, and provides comprehensive visualizations of training dynamics and final performance metrics.
+
+
+# References
+[1] Zhang, H. et al. "Theoretically Principled Trade-off between Robustness and Accuracy." ICML 2019. [[arXiv:1901.08573]](https://arxiv.org/abs/1901.08573)
+
 
